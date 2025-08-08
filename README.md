@@ -56,28 +56,28 @@ This project solves these issues by:
 ```bash
 healthcare_etl_cli/
 ├── main.py                     # CLI entry and command handler
-├── api_client.py               # Handles data extraction from API
-├── data_transformer.py         # Cleans and formats raw data
-├── mysql_handler.py            # Connects to MySQL and performs operations
-├── config.ini                  # Stores API and DB credentials
-├── requirements.txt            # Project dependencies
+├── api_client.py               # Handles data extraction from API or local JSON
+├── data_transformer.py         # Cleans and formats raw or JSON data
+├── mysql_handler.py            # Connects to MySQL and performs CRUD operations
+├── config.ini                  # Stores API endpoints and DB credentials
+├── requirements.txt            # Lists all required Python packages
 ├── sql/
-│   └── create_tables.sql       # SQL schema file
-├── data/
-│   └── pics/
-│       ├── ArchitectureDiagram.jpg     # System architecture image
-│       ├── 1.jpg                       # CLI Output Screenshot 1
-│       ├── 2.jpg                       # CLI Output Screenshot 2
-│       ├── 3.jpg                       # CLI Output Screenshot 3
-│       ├── 4.jpg                       # CLI Output Screenshot 4
-│       ├── 5.jpg                       # CLI Output Screenshot 5
-│       ├── 6.jpg                       # CLI Output Screenshot 6
-│       ├── 7.jpg                       # CLI Output Screenshot 7
-│       ├── 8.jpg                       # CLI Output Screenshot 8
-│       ├── 9.jpg                       # CLI Output Screenshot 9
-│       ├── 10.jpg                      # CLI Output Screenshot 10
-│       └── 11.jpg                      # CLI Output Screenshot 11
-└── README.md                   # Project documentation
+│   └── create_tables.sql       # SQL script to create required tables
+├── output_Images/
+│   ├── ArchitectureDiagram.jpg     # System architecture image
+│   ├── 1.jpg                       # CLI Output Screenshot 1
+│   ├── 2.jpg                       # CLI Output Screenshot 2
+│   ├── 3.jpg                       # CLI Output Screenshot 3
+│   ├── 4.jpg                       # CLI Output Screenshot 4
+│   ├── 5.jpg                       # CLI Output Screenshot 5
+│   ├── 6.jpg                       # CLI Output Screenshot 6
+│   ├── 7.jpg                       # CLI Output Screenshot 7
+│   ├── 8.jpg                       # CLI Output Screenshot 8
+│   ├── 9.jpg                       # CLI Output Screenshot 9
+│   ├── 10.jpg                      # CLI Output Screenshot 10
+│   └── 11.jpg                      # CLI Output Screenshot 11
+└── README.md                   # Complete project documentation and usage
+
 ```
 
 ##  Setup & Installation
