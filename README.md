@@ -50,7 +50,7 @@ This project solves these issues by:
 
 
 #  System Architecture
-![Architecture Diagram](output/pics/ArchitectureDiagram.jpg)
+![Architecture Diagram](output_Images/ArchitectureDiagram.jpg)
 
 ##  File & Module Structure
 ```bash
