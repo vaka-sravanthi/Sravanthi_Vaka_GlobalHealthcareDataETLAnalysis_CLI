@@ -1,4 +1,4 @@
-#  Global Healthcare Data ETL & Analysis CLI  
+# 🌍 Global Healthcare Data ETL & Analysis CLI  
 ### Developed by: Vaka Sravanthi
 
 ##  Project Overview
@@ -21,32 +21,36 @@ This project solves these issues by:
 - Allowing insights through a range of analytical CLI queries
 
 ## Skills and Technologies Used
-# Programming Language:
-    -Python – for scripting, data extraction, transformation, and CLI development
-
-# Database:
-   -MySQL – used for storing cleaned and structured data, and performing analytical queries
-
-# API Source:
-   -disease.sh – public API used to fetch historical COVID-19 data by country and date
-
-# Python Libraries and Modules:
-   -requests – for sending HTTP requests and handling API responses
-   -mysql-connector-python – for connecting and interacting with the MySQL database
-   -argparse – for handling command-line arguments and building the CLI
-   -tabulate – for displaying query results in a well-formatted table in the terminal
-   -configparser – for reading API and DB credentials from an external configuration file
-   -logging – for tracking errors, operations, and debugging information
-
-# Data Manipulation and Validation:
-    -datetime – for working with and validating dates
-    -Custom transformation functions – for cleaning, converting, and filtering raw API data
-# Project Management:
-    -Git – for version control and code tracking
+### Programming Language
+- **Python** – for scripting, data extraction, transformation, and CLI development
 
 
-###  System Architecture
-![Architecture Diagram](data/pics/ArchitectureDiagram.jpg)
+### Database
+- **MySQL** – used for storing cleaned and structured data, and performing analytical queries
+
+### API Source
+- **[disease.sh](https://disease.sh)** – public API used to fetch historical COVID-19 data by country and date
+
+### Python Libraries and Modules
+- `requests` – for sending HTTP requests and handling API responses  
+- `mysql-connector-python` – for connecting and interacting with the MySQL database  
+- `argparse` – for handling command-line arguments and building the CLI  
+- `tabulate` – for displaying query results in a well-formatted table in the terminal  
+- `configparser` – for reading API and DB credentials from an external configuration file  
+- `logging` – for tracking errors, operations, and debugging information
+
+
+### Data Manipulation and Validation
+- `datetime` – for working with and validating dates
+- `data_transformer.py` – custom functions for cleaning and filtering API data
+
+### Project Management
+- `Git` – used for version control, collaborative development, and tracking code changes throughout the project lifecycle
+
+
+
+#  System Architecture
+![Architecture Diagram](output/pics/ArchitectureDiagram.jpg)
 
 ##  File & Module Structure
 ```bash
@@ -178,7 +182,32 @@ python main.py drop_tables
 - `show_all_for_country`
 
 ---
-## Sample Output
+# Sample Output
+
+## Output 1:HealthCare_cli_Intro
+![healthcare_cli_intro](output_Images/1.png)
+## Output 2:ETL Data Fetch Summary
+![ETL Fetch Output](output_Images/2.jpg)
+## Output 3: Database Tables Overview
+![DatabaseOutputs](output_Images/3.jpg)
+## Output 4:Total COVID-19 Cases by Country
+![Total Cases Output](output_Images/5.jpg)
+## Output 5:Top 5 Countries by Total COVID-19 Cases
+![Top Cases Output](output_Images/6.jpg)
+## Output 6:Global COVID-19 Summary
+![Global Summary Output](output_Images/7.jpg)
+## Output 7:Top 5 Countries by Total Deaths (Most Critical Cases)
+![Most Critical Cases Output](output_Images/8.jpg)
+## Output 8:Countries with Recovery Rate Over 50%
+![Recovery Rate Over 50](output_Images/9.jpg)
+## Output 9:COVID-19 Daily Statistics for India
+![India Timeline](output_Images/10.jpg)
+## Output 10:Drop Tables Output
+![Drop Tables Output](output_Images/12.jpg)
+
+
+
+
 
 ## Testing Checklist
 - API fetch 
