@@ -185,7 +185,7 @@ python main.py drop_tables
 # Sample Output
 
 ## Output 1:HealthCare_cli_Intro
-![healthcare_cli_intro](output_Images/1.png)
+![healthcare_cli_intro](output_Images/1.jpgg)
 ## Output 2:ETL Data Fetch Summary
 ![ETL Fetch Output](output_Images/2.jpg)
 ## Output 3: Database Tables Overview
