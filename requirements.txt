@@ -1,3 +1,6 @@
 mysql-connector-python
 requests
 tabulate
+streamlit
+pandas
+plotly
