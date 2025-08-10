@@ -28,9 +28,6 @@ class MySQLHandler:
             logging.error(f"Failed to create tables: {e}")
 
     def insert_data(self, table_name, data):
-        """
-        Insert data into the specified table.
-        """
         query = f"""
         INSERT IGNORE INTO {table_name} (country, date, cases, deaths, recovered)
         VALUES (%s, %s, %s, %s, %s)
@@ -52,9 +49,6 @@ class MySQLHandler:
             return []
 
     def query(self, query, params=None):
-        """
-        Execute a SELECT query and return results.
-        """
         try:
             self.cursor.execute(query, params or ())
             return self.cursor.fetchall()
@@ -67,3 +61,16 @@ class MySQLHandler:
             self.cursor.close()
             self.conn.close()
             logging.info(" MySQL connection closed")
+            
+    def insert_data_vaccine(self, table_name, data):
+        query = f"""
+        INSERT IGNORE INTO {table_name} (country, date, vaccinations)
+        VALUES (%s, %s, %s)
+        """
+        try:
+            self.cursor.executemany(query, data)
+            self.conn.commit()
+            logging.info(f" Inserted {self.cursor.rowcount} vaccination records into {table_name}")
+        except mysql.connector.Error as err:
+            logging.error(f" Error inserting vaccination data: {err}")
+            self.conn.rollback()
